@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&subset=cyrillic-ext" rel="stylesheet" />
+		<link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Канбан-доска</title>
+	</head>
+	<body class="body"> 
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container container">
+					<h1 class="header__title">Канбан-доска</h1>
+					<div class="header__block-btn">
+						<button type="button" title="Сохранить изменения" class="header__button material-symbols-outlined">save</button>
+					</div>
+				</div>
+			</header>
+
+			<main class="page">
+				<div class="page__kanban-board kanban-board">
+					<div class="kanban-board__container container">
+						<div class="kanban-board__content">
+							<div class="kanban-board__body">
+							</div>
+							<div class="kanban-board__create-column">
+								<button type="button" title="Создать раздел" class="kanban-board__button">+</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<div class="modal">
+			<div class="modal__body">
+				<div class="modal__close"></div>
+				<div class="modal__content">
+					<form action="/" method="post" class="modal__form form">
+						<h2 class="form__title"></h2>
+						<div class="form__item">
+							<label for="title" class="form__label label">Заголовок</label>
+							<input 
+								id="title"
+								name="title"
+								type="text" 
+								class="form__input input"
+								tabindex="1"
+								title="Заголовок"
+							>
+						</div>
+						<div class="form__item">
+							<label for="description" class="form__label label">Описание</label>
+							<textarea 
+								id="description"
+								name="description"
+								class="form__input input"
+								tabindex="2"
+								title="Описание"
+							></textarea>
+						</div>
+						<div class="form__item">
+							<label for="color" class="form__label">Цвет карточки</label>
+							<input 
+								id="color"
+								name="color"
+								type="color" 
+								class="form__input input-color"
+								tabindex="3"
+								title="Цвет"
+								value="#FFFF00"
+							>
+						</div>
+
+						<div class="form__btn-block">
+							<button type="button" class="form__btn">Создать/Изменить</button>
+							<button type="button" class="form__btn--delete">Удалить карточку</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script type="module" src="js/lesson_final.js"></script>
+	</body>
+</html>

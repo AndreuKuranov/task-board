@@ -1,0 +1,348 @@
+@import "normalize.css";
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes zoomOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+
+@keyframes closeOpen {
+  0% {
+		top: 40%;
+		right: 40%;
+		opacity: 0;
+  }
+	50% {
+		opacity: 0.5;
+  }
+  100% {
+    top: -1rem;
+		right: -1rem;
+		opacity: 1;
+  }
+}
+@keyframes closeClose {
+  0% {
+		top: -1rem;
+		right: -1rem;
+		opacity: 1;
+  }
+  100% {
+    top: 50%;
+		right: 50%;
+		opacity: 0;
+  }
+}
+
+@keyframes opacityOpen {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@keyframes opacityClose {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+.header__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header__title {
+	width: 100%;
+	text-align: center;
+}
+.header__block-btn {
+}
+.header__button {
+	padding: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.page {
+}
+.page__kanban-board {
+}
+.kanban-board {
+}
+.kanban-board__container {
+}
+.kanban-board__content {
+	padding: 20px;
+	display: flex;
+	background-color: #162223;
+	border-radius: 10px;
+}
+.kanban-board__body {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: -10px;
+}
+.kanban-board__column {
+}
+.kanban-board__create-column {
+	display: flex;
+	align-items: flex-end;
+	margin-left: 10px;
+}
+.kanban-board__button {
+}
+
+/* --------------------------------------------------*/
+
+.column {
+	flex: 1 1 25%;
+	min-width: 200px;
+	display: flex;
+	flex-direction: column;
+}
+.column__header {
+	background-color: #fff;
+	margin: 10px;
+	position: relative;
+	display: flex;
+}
+.column__title {
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	flex: 1 1 auto;
+}
+.column__btn-block {
+}
+.column__btn-delete {
+	margin: 2px;
+	padding: 0;
+}
+.column__input {
+	margin: 5px 0 3px 0;
+	box-sizing: border-box;
+  outline: none;
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	font-size: 1.17rem;
+	font-weight: 700;
+}
+.open {
+	display: none;
+}
+.column__body {
+	margin: 10px;
+	padding: 0 0 40px 0;
+	background-color: #fff;
+	flex: 1 1 auto;
+}
+.column__item {
+}
+
+/* --------------------------------------------------*/
+
+.item {
+	padding: 10px 10px 0 10px;
+	list-style: none;
+}
+.item__content {
+	min-height: 60px;
+	background-color: rgba(255, 255, 0, 1);
+	cursor: move;
+}
+.item__title {
+	margin: 0;
+	padding: 10px 0;
+	text-align: center;
+}
+.item__text {
+	padding: 0 5px 5px 5px;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.modal {
+	position: fixed;
+	overflow-y: scroll;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+	display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal--open {
+	display: flex;
+}
+.modal__body {
+	display: flex;
+	min-width: 300px;
+	position: relative;
+	margin-right: 1rem;
+}
+.modal__close {
+  display: block;
+}
+.modal__close::after {
+	position: absolute;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  content: "×";
+  cursor: pointer;
+}
+.modal__close-closeOpen::after {
+	animation: closeOpen 0.7s both;
+}
+.modal__close-closeClose::after {
+	animation: closeClose 0.7s both;
+}
+.modal__close::before {
+	left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0);
+  content: "";
+  cursor: default;
+}
+.modal__animation-opacityOpen::before {
+	animation: opacityOpen 0.7s both;
+}
+.modal__animation-opacityClose::before {
+	animation: opacityClose 0.7s both;
+}
+.modal__content {
+	width: 25rem;
+  position: relative;
+  padding: 1.5em;
+  background-color: #fff;
+}
+.modal__animation-zoomIn {
+	animation: zoomIn 0.7s both;
+}
+.modal__animation-zoomOut {
+	animation: zoomOut 0.7s both;
+}
+.modal__form {
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+	border: 2px solid red;
+	border-radius: 5px;
+}
+.form__title {
+	margin: 0 0 5px 0;
+	text-align: center;
+}
+.form__item {
+	display: flex;
+	flex-direction: column;
+	padding: 15px 10px 10px 10px;
+	position: relative;
+}
+.form__input {
+	margin: 10px 0 0 0;
+	border-radius: 5px;
+	border: 2px solid rgb(113, 112, 112);
+}
+.input {
+	flex: 1 1 100%;
+	padding: 10px;
+}
+.input-color {
+	width: 100%;
+}
+.form__label {
+}
+.label {
+	position: absolute;
+	top: 35px;
+	left: 20px;
+	color: rgb(113, 112, 112);
+}
+.label--transition {
+	transition: 0.5s;
+}
+.label--top {
+	top: 0px;
+	color: #000;
+}
+.form__btn-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.form__btn {
+}
+.form__btn--delete {
+	margin-top: 10px;
+	display: none;
+}
+.form__btn--open {
+	display: block;
+}

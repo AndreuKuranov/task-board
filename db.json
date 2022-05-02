@@ -1,0 +1,117 @@
+{
+  "all": [
+    {
+      "arr": [
+        {
+          "columnTitle": "TITLE1",
+          "item": [
+            {
+              "title": "заголовок1",
+              "text": "описание1",
+              "color": "#FFFF00",
+              "id": "b0c424dc-99b6-04de-0e1b-2c8866cc6aca"
+            },
+            {
+              "title": "заголовок2",
+              "text": "описание2",
+              "color": "#FF0000",
+              "id": "0031f52d-f7bb-6333-4179-ba748e505983"
+            }
+          ],
+          "id": "e3d46284-864e-2db2-bc67-ccd700aa66c8"
+        },
+        {
+          "columnTitle": "TITLE2",
+          "item": [
+            {
+              "title": "заголовок1",
+              "text": "описание1",
+              "color": "#FF7300",
+              "id": "f83d4805-25e6-44d8-7d58-2f4608ab2799"
+            },
+            {
+              "title": "заголовок2",
+              "text": "описание2",
+              "color": "#0091FF",
+              "id": "bd398b2e-165f-600a-97a7-f145e737d13a"
+            },
+            {
+              "title": "заголовок3",
+              "text": "описание3",
+              "color": "#00FF4C",
+              "id": "82e0ade0-932f-2d9e-a551-70d8ec6a34cc"
+            }
+          ],
+          "id": "c3567ec1-97f3-ead9-9716-de58b39f85aa"
+        },
+        {
+          "columnTitle": "TITLE3",
+          "item": [
+            {
+              "title": "заголовок1",
+              "text": "описание1",
+              "color": "#FF00DD",
+              "id": "380d0b29-10c1-fa0c-8e51-10e48fabd36e"
+            },
+            {
+              "title": "заголовок2",
+              "text": "описание2",
+              "color": "#8C00FF",
+              "id": "88f7c179-80a1-f718-0c7a-d04ff356b01d"
+            },
+            {
+              "title": "заголовок3",
+              "text": "описание3",
+              "color": "#00FFFB",
+              "id": "4160d9f0-54ee-36e5-0186-1ba0ab2cb8f4"
+            },
+            {
+              "title": "заголовок4",
+              "text": "описание4",
+              "color": "#FC00FF",
+              "id": "cd307105-6b72-5590-738e-b21d0563b204"
+            },
+            {
+              "title": "заголовок5",
+              "text": "описание5",
+              "color": "#00FFC8",
+              "id": "6e47ed33-fcb5-9fd3-5595-7653bfa01cc3"
+            }
+          ],
+          "id": "027e0a01-f130-876c-15ab-920f420005d9"
+        },
+        {
+          "columnTitle": "TITLE4",
+          "item": [
+            {
+              "title": "заголовок1",
+              "text": "описание1",
+              "color": "#00CCFF",
+              "id": "9a88a970-d6ca-584b-6b59-8fb5fdff056c"
+            },
+            {
+              "title": "заголовок2",
+              "text": "описание2",
+              "color": "#FFBB00",
+              "id": "dd8fc508-d1aa-dc27-bd8a-691ee1464dcc"
+            },
+            {
+              "title": "заголовок3",
+              "text": "описание3",
+              "color": "#3300FF",
+              "id": "c1f5d2f0-6b54-b6e0-7da4-5e9d196a8679"
+            },
+            {
+              "title": "заголовок4",
+              "text": "описание4",
+              "color": "#AEFF00",
+              "id": "4ec92370-eff7-a6a6-7dad-8a8acc4ab804"
+            }
+          ],
+          "id": "18b127f1-d0ba-ed9b-b45e-192f716bfe19"
+        }
+      ],
+      "id": "taskBoard"
+    }
+  ]
+}
